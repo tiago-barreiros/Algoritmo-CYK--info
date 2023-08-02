@@ -6,6 +6,8 @@
 # INVESTIGAÇÃO
 -->
 
+![](images/logo.png)
+
 </div>
 
 # Algoritmo CYK
