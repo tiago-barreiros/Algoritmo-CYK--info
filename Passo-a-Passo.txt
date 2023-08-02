@@ -1,0 +1,10 @@
+Basicamente, 
+1.les o input, nota do input, no maximo são 3 caracteres podendo variar entre 2 a 3
+2. Lista de novas_transiçoes para guardares conforme vai avançando no cyk
+3.depois no algoritmo cyk, crias uma matriz com o tamanho da palavra
+4. fazes um for que va desde do tamanho da palavra-1 ate 0  para ir de baixo para cima
+5. e outro para percorrer as linhas
+6. depois percorres a palavra, se a palavra for tamanho 1, isto é, se tiver na parte mais baixa da matriz vou procurar a letra na lista inicial das transições e se encontrar adiciona na matriz e na nova lista de transições
+7. se o tamanho for maior 1, vai percorrendo a palavra tipo (aa, divides em a, a) e procuras na nova lista de transições
+8. se encontrar adicionas na matriz o antecedente (S -> a) adicionas o S e adicionas na lista de transições S -> aa, e vais adicionando se ja nao tiver la
+9. depois se o S tiver no topo metes YES e imprimes a matriz, se nao tiver metes NO e imprimes a matriz

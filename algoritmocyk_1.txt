@@ -1,0 +1,73 @@
+S -> A A
+S -> A S
+S -> b
+A -> A S
+A -> S A
+A -> a
+|w| = 2
+A -> ab
+S -> ab
+A -> ba
+S -> aa
+|w| = 3
+A -> aba
+S -> aba
+S -> baa
+A -> aab
+S -> aab
+|w| = 4
+A -> abaa
+S -> abaa
+A -> baab
+S -> baab
+|w| = 5
+A -> abaab
+S -> abaab
+
+[a,b,a,a,b]
+
+|w| = 2
+[a,b] -> [A,S] -> AS -> [A,S]
+[b,a] -> [S,A] -> SA -> [A]
+[a,a] -> [A,A] -> AA -> [S]
+[a,b] -> [A,S]
+
+|w| = 3
+[a,b,a] -> [A,S]
+[a,ba] = [A,A] = AA = S
+[ab,a] = [A|S,A] = [A,S][A] = AA | SA = [A,S]
+
+[b,a,a] -> [S]
+[ba,a] = [A][A] = AA = [S]
+[b,aa] = [S][S] = SS = []
+
+
+[a,a,b] -> [A,S]
+[a,ab] = [A][A,S] = [AA, AS] = [A,A,S] = [A,S]
+[aa,b] = [S][S] = SS = []
+
+|w| = 4
+[a,b,a,a] -> [A,S]
+[a,baa] = [A][S] = AS = [A,S]
+[ab,aa] = [A,S][S] = [AS,SS] = [A,S]
+[aba,a] = [A,S][A] = [AA,SA] = [A,S]
+
+[b,a,a,b] -> [A,S]
+[b,aab] = [S][A,S] = [SA,SS] = [A]
+[ba,ab] = [A][A,S] = [AA, AS] = [A,S]
+[baa,b] = [S][S] = SS = []
+
+|w| = 5
+[a,b,a,a,b] -> [A,S]
+[a,baab] = [A][A,S] = [AA, AS] = [A,S]
+[ab,aab] = [A,S][A,S] = [AA,AS,SA,SS] = [A,S]
+[aba,ab] = [A,S][A,S] = [AA,AS,SA,SS] = [A,S]
+[abaa,b] = [A,S][S] = [AS,SS] = [A,S]
+
+
+R: abaab pertence á linguagem!!!
+
+
+
+
+
